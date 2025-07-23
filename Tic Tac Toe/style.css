@@ -1,0 +1,82 @@
+body {
+  background: #8fb8e0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center; /* horizontal alignment */
+  align-items: center; /* vertical alignment */
+  height: 100vh; /* 100% of the viewport height */
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column; /* changes the direction of the flex items to column */
+  align-items: center;
+}
+
+.game {
+  display: grid;
+  grid-template-columns: repeat(3, 80px);
+  grid-template-rows: repeat(3, 80px);
+  gap: 10px;
+  background: #22223b;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(34, 34, 59, 0.2);
+}
+  
+.box {
+  width: 80px;
+  height: 80px;
+  background: #9a8c98;
+  border: none;
+  border-radius: 12px;
+  font-size: 2.5rem;
+  color: #f2e9e4;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+  box-shadow: 0 2px 8px rgba(34, 34, 59, 0.08);
+}
+
+.box:hover {
+  background: #c9ada7; /* changes the background color of the box when hovered over */
+  transform: scale(1.05); /* scales the box to 105% of its original size */
+}
+
+.title {
+  color: #22223b;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+.message{
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+  font-weight: bold;
+  color: #cb1842;
+}
+.reset-btn{
+
+    margin-top: 23px;
+    width: 71px;
+    height: 30px;   
+    background-color: #801354;
+    color: #cecee0;
+    border: none;
+    border-radius:6px;
+    border-color: #9c2c13;
+    border-width: 7px;
+    font-size: 15px;
+}
+.reset-btn:hover{
+    background-color: #9c2c13;
+    color: #cecee0;
+    border: none;
+    border-radius:6px;
+    border-color: #9c2c13;
+    border-width: 7px;
+    font-size: 15px;
+}
